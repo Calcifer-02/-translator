@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int x;
+int y;
+int result;
+for(y=1;y<5;y+1){
+if(result!=6){
+do{
+y=x+2;
+if(result!=6){
+result=y-5;
+}
+}while(y<101);
+x = x+1;
+result = x-y;
+}
+}
+}
+

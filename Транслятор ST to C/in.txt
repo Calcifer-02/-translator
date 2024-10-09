@@ -1,0 +1,25 @@
+PROGRAM 
+	VAR
+		x : INT;
+		y : INT;
+		result : INT;
+	END_VAR
+	
+	FOR y := 1 TO 5 BY 1 DO
+		IF
+			result <> 6
+		THEN
+			REPEAT 
+				y:=x+2;
+						IF
+							result <> 6
+						THEN
+							result := y - 5;
+						END_IF
+				UNTIL y < 101;
+				END_REPEAT;
+			x := x + 1;
+			result := x - y;
+		END_IF
+	END_FOR
+END_PROGRAM
